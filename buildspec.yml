@@ -13,7 +13,8 @@ phases:
       - npm run build
       - echo Syncing build directory with S3...
       - aws s3 sync build/ s3://ssg-react-app-0907/ --delete
-  artifacts:
-    files:
-      - '**/*'
-    base-directory: build
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build
