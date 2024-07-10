@@ -12,7 +12,7 @@ phases:
       - echo Building the React app...
       - npm run build
       - echo Syncing build directory with S3...
-      - aws s3 sync build/ s3://ssg-react-app-0907/test-folder/ --delete
+      - aws s3 sync build/ s3://ssg-react-app-0907/ --delete
 
 artifacts:
   files:
